@@ -1,4 +1,4 @@
-project "ImGui"
+project "ImGuizmo"
 	kind "StaticLib"
 	language "C++"
 
@@ -10,6 +10,11 @@ project "ImGui"
         "*.h",
         "*.cpp"
 	}
+
+    includedirs
+    {
+        "%{IncludeDir.IMGUI}",
+    }
 
 	filter "system:windows"
 		systemversion "latest"
