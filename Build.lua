@@ -11,10 +11,10 @@ project "ImGuizmo"
         "*.cpp"
 	}
 
-    includedirs
-    {
-        "../imgui/",
-    }
+   includedirs
+   {
+        "../imgui",
+   }
 
 	filter "system:windows"
 		systemversion "latest"
